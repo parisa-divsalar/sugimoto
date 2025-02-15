@@ -10,6 +10,10 @@ A React app template with Vite, Redux Toolkit, and Material-UI integration. Idea
 - **React Router** for client-side routing
 - **TypeScript** for static typing
 
+
+[//]: # (	&#40;userName === "test" && password === '123456'&#41; {)
+
+
 Happy coding!
 
 ---
