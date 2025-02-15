@@ -1,0 +1,119 @@
+@import '@/assets/styles/fonts';
+
+
+:root {
+ font-size: 16px;
+}
+
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'IRANYekanXRegular', Tahoma !important;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+  outline: none;
+
+  &::-webkit-scrollbar{
+    background-color: rgba(0 , 0 , 0 , 0.25);
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 20px;
+    &:hover {
+      cursor: grab;
+    }
+  }
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.md-editor-content-editor {
+  height: 200px;
+  direction: rtl;
+  text-align: right;
+}
+
+[class*='MuiTableCell-root'] {
+  [class*='MuiSvgIcon-root'] {
+    color: #3572EF;
+  }
+}
+
+.zoomInEffect {
+  animation: zoomInEffect ease 0.7s;
+}
+
+.mainLoading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContainer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes zoomInEffect {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.fadeInLeftAnimation {
+  animation: fadeInLeftEffect ease 1s;
+}
+
+@keyframes fadeInLeftEffect {
+  0% {
+    left: -25%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.fadeInRightAnimation {
+  animation: fadeInRightEffect ease 1s;
+}
+
+@keyframes fadeInRightEffect {
+  0% {
+    right:-25%;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
